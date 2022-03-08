@@ -1,0 +1,11 @@
+{
+    "user": {
+        "name": "Raimon",
+        "surname": "Espasa Bou",
+        "email": "raiesbo@uoc.edu",
+        "img": "../images/*"
+    },
+    "experience": {},
+    "education": {},
+    "hobbies": {}
+}

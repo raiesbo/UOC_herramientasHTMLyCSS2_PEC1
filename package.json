@@ -8,8 +8,9 @@
     "parcel:build": "parcel build src/index.html --target web --no-source-maps --no-cache",
     "clean": "rimraf dist .cache .cache-loader .parcel-cache",
     "dev": "npm-run-all clean parcel:serve",
-    "build": "npm-run-all clean parcel:build",
-    "test": "echo 'Everything is working as expected ✅\nStart working on your project by running \\033[1mnpm run dev\\033[0m'"
+    "build": "npm-run-all clean stylelint parcel:build",
+    "test": "echo 'Everything is working as expected ✅\nStart working on your project by running \\033[1mnpm run dev\\033[0m'",
+    "stylelint": "stylelint src/**/*.scss"
   },
   "web": "dist/index.html",
   "targets": {
@@ -33,7 +34,7 @@
   "bugs": {
     "url": "https://github.com/uoc-advanced-html-css/uoc-boilerplate/issues"
   },
-  "homepage": "https://github.com/uoc-advanced-html-css/uoc-boilerplate#readme",
+  "homepage": "https://herramientashtmlycss2-pec1-raiesbo.netlify.app/",
   "devDependencies": {
     "@parcel/transformer-sass": "^2.2.0",
     "autoprefixer": "^10.4.2",
@@ -42,7 +43,10 @@
     "postcss-preset-env": "^7.3.1",
     "posthtml-include": "^1.7.2",
     "rimraf": "^3.0.2",
-    "sharp": "^0.29.3"
+    "sharp": "^0.29.3",
+    "stylelint": "^14.5.3",
+    "stylelint-config-recommended-scss": "^5.0.2",
+    "stylelint-scss": "^4.1.0"
   },
   "dependencies": {}
 }
