@@ -16,7 +16,7 @@
             },
             {
                 "type": "email",
-                "data": "thisweb.com",
+                "data": "portfolioWebsite.com",
                 "icon": "fa-solid fa-house"
             },
             {
@@ -89,7 +89,24 @@
             ]
         }
     ],
-    "technologies": [],
+    "technologies": [
+        {
+            "label": "Languages",
+            "content": "JavaScript, HTML, CSS, Python, PHP"
+        },
+        {
+            "label": "Libraries & Frameworks",
+            "content": "React, Next, Node, Sass, Jest, Cypress, D3js, Symfony"
+        },
+        {
+            "label": "Tools",
+            "content": "Git(GitHub & GitLab), MongoDB, Heroku, Firebase, Postman"
+        },
+        {
+            "label": "Design",
+            "content": "Photoshop, Figma. Illustrator, InDesign"
+        }
+    ],
     "hobbies": [
         "one",
         "two",

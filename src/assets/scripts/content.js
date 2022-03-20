@@ -9,13 +9,22 @@ const content = Vue.createApp({
             hobbies,
             isExperienceExpanded: true,
             isEducationExpanded: true,
+            isTechnologiesExpanded: true,
             isTechnologiesExpanded: true
         }
     },
     methods: {
         toggleExperience() {
             this.isExperienceExpanded = !this.isExperienceExpanded
-            console.log(this.isExperienceExpanded)
+        },
+        toggleEducation() {
+            this.isEducationExpanded = !this.isEducationExpanded
+        },
+        toggleTechnologies() {
+            this.isTechnologiesExpanded = !this.isTechnologiesExpanded
+        },
+        toggleHobbies() {
+            this.isTechnologiesExpanded = !this.isTechnologiesExpanded
         }
     }
 });
