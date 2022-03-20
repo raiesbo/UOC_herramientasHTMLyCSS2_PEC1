@@ -1,3 +1,10 @@
-<footer class="uoc-footer">
-    &copy; Universitat Oberta de Catalunya
+<footer class="uoc-footer" id="footer">
+    &copy; Universitat Oberta de Catalunya {{ hobbies }}{{ title }}
+    <each loop="item, key in [1, 2, 3]">
+        <p>{{ index }}: {{ item }}</p>
+    </each>
+
+    <each loop="item, index in hobbies">
+        <p>{{ index }}: {{ item }}</p>
+    </each>
 </footer>
