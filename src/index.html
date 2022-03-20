@@ -13,10 +13,32 @@
         <title>UOC Boilerplate</title>
     </head>
     <body>
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css"
+        />
         <script src="https://unpkg.com/vue@next"></script>
         <include src="./views/header.html"></include>
+        <main id="content">
+            <section
+                :class="isExperienceExpanded ? 'section' : 'section section--collapsed'"
+            >
+                <header class="section__header" @click="toggleExperience">
+                    <h2>Experience</h2>
+                    <i
+                        v-if="isExperienceExpanded"
+                        class="fa-solid fa-chevron-up fa-xl"
+                    ></i>
+                    <i v-else class="fa-solid fa-chevron-down fa-xl"></i>
+                </header>
+                <div class="section__content">
+                    <h2>Experience</h2>
+                </div>
+            </section>
+            <!-- HERE COMES THE REST OF THE COMPONENTS -->
+        </main>
 
-        <div class="uoc-container">
+        <!-- <div class="uoc-container">
             <i class="fa-regular fa-code-branch"></i>
             <picture>
                 <source
@@ -36,16 +58,10 @@
                 the Master's Program in Web App and Website Development at the
                 Universitat Oberta de Catalunya.
             </p>
-        </div>
-        <div>{{data.user.name}}</div>
-        <include src="./views/footer.html"></include>
+        </div> -->
+
+        <!-- <include src="./views/footer.html"></include> -->
         <script type="module" src="./assets/scripts/main.js"></script>
-        <!-- <script type="module">
-            const data = require("./assets/data/cv-data.json");
-            console.log("fasfsafsdddd", data);
-            const trolo = JSON.stringify([1, 2, 3]);
-        </script> -->
         <!-- do not remove this line! -->
-        <script type="module" src="./assets/scripts/header.js"></script>
     </body>
 </html>

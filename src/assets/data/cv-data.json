@@ -1,12 +1,34 @@
 {
     "user": {
-        "name": "Raimon",
-        "surname": "Espasa Bou",
-        "email": "raiesbo@uoc.edu",
-        "img": "../images/*"
+        "name": "Raimon Espasa Bou",
+        "occupation": "Software developer",
+        "img": "../images/*",
+        "contactInfo": [
+            {
+                "type": "email",
+                "data": "raiesbo@uoc.edu",
+                "icon": "fa-solid fa-envelope"
+            },
+            {
+                "type": "telephone",
+                "data": "0049 1765354792",
+                "icon": "fa-solid fa-phone"
+            },
+            {
+                "type": "email",
+                "data": "thisweb.com",
+                "icon": "fa-solid fa-house"
+            },
+            {
+                "type": "github",
+                "data": "github.com/raiesbo",
+                "icon": "fa-brands fa-github-alt"
+            }
+        ]
     },
-    "experience": {},
-    "education": {},
+    "experience": [],
+    "education": [],
+    "technologies": [],
     "hobbies": [
         "one",
         "two",

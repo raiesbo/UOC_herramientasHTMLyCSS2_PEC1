@@ -6,6 +6,6 @@ const header = Vue.createApp({
             ...user
         }
     }
-})
+});
 
-header.mount('#header')
+header.mount('#header');

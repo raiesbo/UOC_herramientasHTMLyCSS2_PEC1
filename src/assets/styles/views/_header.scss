@@ -1,7 +1,31 @@
 .main-header {
-  background-color: red;
+  width: 100%;
+  padding: 30px;
+  background: grey;
+  color: white;
+
+  & > * {
+    width: 100%;
+    max-width: 1170px;
+    margin: auto;
+  }
 
   &__data {
-    background-color: orange;
+    padding-bottom: 20px;
+  }
+
+  &__contact-info {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+
+    & > * {
+      display: flex;
+      gap: 10px;
+
+      i {
+        transform: translateY(2px);
+      }
+    }
   }
 }
