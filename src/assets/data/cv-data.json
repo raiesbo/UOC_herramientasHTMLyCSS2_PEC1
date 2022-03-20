@@ -26,8 +26,69 @@
             }
         ]
     },
-    "experience": [],
-    "education": [],
+    "education": [
+        {
+            "title": "Postgrad. Web Development and Design",
+            "university": "Open University of Catalonia",
+            "date": "2021 - Present",
+            "extraInfo": null
+        },
+        {
+            "title": "Architecture",
+            "university": "Warsaw University of Technology",
+            "date": "2014 - 2015",
+            "extraInfo": "Erasmus Exchange Program"
+        },
+        {
+            "title": "Architecture",
+            "university": "Technical University of Valencia",
+            "date": "2010 - 2016",
+            "extraInfo": null
+        }
+    ],
+    "experience": [
+        {
+            "position": "Full Stack Developer",
+            "company": "Webgears Group",
+            "place": "Berlin, Germany",
+            "date": "08.2021 - present",
+            "tasks": [
+                "Next.js aplication developement for multiple voucher white-labels and portals. ",
+                "Unit, E2E, Regression testing implementation using Cypress and Jest.",
+                "Web optimization for better performance in Lighthouse"
+            ]
+        },
+        {
+            "position": "Architect",
+            "company": "rundzwei Architekten",
+            "place": "Berlin, Germany",
+            "date": "04.2017 - 07.2021",
+            "tasks": [
+                "Teamwork in an international and multidisciplinary environment with flat team hierarchie and collective ownership of the projects.",
+                "Workflow in architecture competitions similar to agile methodology.",
+                "Website management with tasks such as updating the project or writing and publishing articles."
+            ]
+        },
+        {
+            "position": "Architect Intern",
+            "company": "Funkciona Architekti",
+            "place": "Warsaw, Poland",
+            "date": "10.2016 - 03.2017",
+            "tasks": [
+                "Frequent business trips to visit construction sites in different countries of the European Union.",
+                "Permanent contact with contractors and disciplines coordination."
+            ]
+        },
+        {
+            "position": "Architect Intern",
+            "company": "Antonio Altarriba Architects",
+            "place": "Valencia, Spain",
+            "date": "09.2015 - 07.2016",
+            "tasks": [
+                "3d modelling and rendering with Rhino 3d, vray and video-renderings with Lumion."
+            ]
+        }
+    ],
     "technologies": [],
     "hobbies": [
         "one",
