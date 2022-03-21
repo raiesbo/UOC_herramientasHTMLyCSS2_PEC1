@@ -1,12 +1,49 @@
 @use "sass:color";
+@use "sass:list";
 
-$font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-  "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
-  "Segoe UI Symbol";
-$font-family-serif: "Georgia", "Times New Roman", serif;
+/*------------------------------------*\
+  # VARIABLES
+\*------------------------------------*/
+
+$font-family: "Lato", sans-serif;
 
 $uoc-corporate: #000078;
 $uoc-masterbrand: #73edff;
 $uoc-bg: color.scale($uoc-masterbrand, $lightness: 70%);
 
-$mqMinWidth: 420px;
+$breakpointSmall: 360px;
+$breakpointMedium: 930px;
+
+$colorText-main: #1f477e;
+$colorText-second: #bdbdbd;
+$colorText-white: #fff;
+$colorText-alt: #4e9feb;
+
+$colorBackground-alt: #0a192f;
+
+/*------------------------------------*\
+  # UTILS (MIXINS AND FUNCTIONS)
+\*------------------------------------*/
+
+//             1   2   3   4   5   6   7   8    9   10   11
+$spaceValues: (5, 10, 15, 20, 25, 30, 40, 60, 100, 160, 240);
+
+@function space($value) {
+  @return list.nth($spaceValues, $value) * 1px;
+}
+
+@mixin matchSmall {
+  @media screen and (max-width: 360px) {
+    @content;
+  }
+}
+
+@mixin matchMedium {
+  @media screen and (max-width: 930px) {
+    @content;
+  }
+}
+
+@mixin animate($attr: all) {
+  transition: $attr 250ms ease-in-out;
+}

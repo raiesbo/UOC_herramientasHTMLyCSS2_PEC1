@@ -1,8 +1,8 @@
 .main-header {
   width: 100%;
   padding: 30px;
-  background: grey;
-  color: white;
+  background: $colorBackground-alt;
+  color: $colorText-second;
 
   & > * {
     width: 100%;
@@ -12,6 +12,16 @@
 
   &__data {
     padding-bottom: 20px;
+
+    h1 {
+      font-size: 45px;
+      text-transform: uppercase;
+      color: $colorText-white;
+    }
+
+    p {
+      font-size: 25px;
+    }
   }
 
   &__contact-info {

@@ -10,7 +10,16 @@
             href="./assets/styles/main.scss"
         />
         <!-- do not remove this line! -->
-        <title>UOC Boilerplate</title>
+        <title>Herramientas HTML y CSS 2. PEC 1</title>
+        <meta name="author" content="Raimon Espasa Bou" />
+        <meta
+            name="description"
+            content="PEC1 de la asignatura de Herramientas HTML y CSS 2, UOC"
+        />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&display=swap"
+            rel="stylesheet"
+        />
     </head>
     <body>
         <link
@@ -30,7 +39,7 @@
                         class="fa-solid fa-chevron-up fa-xl"
                     ></i>
                     <i v-else class="fa-solid fa-chevron-down fa-xl"></i>
-                </header>
+                </header v-if="isExperienceExpanded">
                 <ul class="section__content">
                     <include src="./views/experience.html"></include>
                 </ul>
