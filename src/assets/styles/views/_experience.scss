@@ -1,14 +1,33 @@
 .job-item {
+  &__header {
+    text-transform: uppercase;
+  }
+
   &__info {
     display: flex;
     justify-content: space-between;
     margin-bottom: space(1);
   }
 
+  &__date {
+    color: $colorText;
+  }
+
   &__description {
-    margin-left: space(4);
     display: flex;
     flex-direction: column;
     gap: space(1);
+    color: $colorText;
+    margin-left: space(2);
+
+    i {
+      margin-right: space(1);
+    }
+  }
+
+  @include matchMobile {
+    &__info {
+      flex-direction: column;
+    }
   }
 }

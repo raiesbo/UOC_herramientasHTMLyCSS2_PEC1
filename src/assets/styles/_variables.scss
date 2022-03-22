@@ -5,19 +5,20 @@
   # VARIABLES
 \*------------------------------------*/
 
-$font-family: "Lato", sans-serif;
+$font-family: "Montserrat", sans-serif;
 
 $screenMaxWidth: 1170px;
 
 $breakpointSmall: 480px;
 $breakpointMedium: 930px;
 
-$colorText-main: #1f477e;
+$colorText-main: #0a192f;
 $colorText-second: #bdbdbd;
 $colorText-white: #fff;
 $colorText-alt: #4e9feb;
+$colorText: #444452;
 
-$colorBackground-alt: #0a192f;
+$colorBackground-alt: $colorText-main;
 
 /*------------------------------------*\
   # UTILS (MIXINS AND FUNCTIONS)

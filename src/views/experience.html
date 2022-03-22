@@ -3,13 +3,12 @@
         <h3>{{ job.position }}</h3>
     </header>
     <p class="job-item__info">
-        <span class="job-item__info--company">{{ job.company }}</span>
-        <span class="job-item__info--date">
-            {{ `${job.place} | ${job.date}` }}
-        </span>
+        <span class="job-item__company">{{ job.company }}</span>
+        <span class="job-item__date"> {{ `${job.place} | ${job.date}` }} </span>
     </p>
     <ul class="job-item__description">
         <li v-for="task in job.tasks" class="job-item__description--item">
+            <i class="fa-solid fa-angle-right fa-xs"></i>
             {{ task }}
         </li>
     </ul>
