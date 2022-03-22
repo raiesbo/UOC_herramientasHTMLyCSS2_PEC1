@@ -7,11 +7,9 @@
 
 $font-family: "Lato", sans-serif;
 
-$uoc-corporate: #000078;
-$uoc-masterbrand: #73edff;
-$uoc-bg: color.scale($uoc-masterbrand, $lightness: 70%);
+$screenMaxWidth: 1170px;
 
-$breakpointSmall: 360px;
+$breakpointSmall: 480px;
 $breakpointMedium: 930px;
 
 $colorText-main: #1f477e;
@@ -32,14 +30,14 @@ $spaceValues: (5, 10, 15, 20, 25, 30, 40, 60, 100, 160, 240);
   @return list.nth($spaceValues, $value) * 1px;
 }
 
-@mixin matchSmall {
-  @media screen and (max-width: 360px) {
+@mixin matchMobile {
+  @media screen and (max-width: $breakpointSmall) {
     @content;
   }
 }
 
-@mixin matchMedium {
-  @media screen and (max-width: 930px) {
+@mixin matchTablet {
+  @media screen and (max-width: $breakpointMedium) {
     @content;
   }
 }

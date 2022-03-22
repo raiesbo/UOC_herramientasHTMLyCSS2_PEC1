@@ -18,18 +18,20 @@ body {
 }
 
 main {
-  max-width: 1170px;
   width: 100%;
   margin: space(6) auto;
-  padding: 0 space(2);
+  padding: 0 space(3);
 }
 
 .section {
+  margin: auto;
+  max-width: $screenMaxWidth;
+
   &__header {
-    border-bottom: 1px solid black;
+    border-bottom: 3px solid black;
     display: flex;
     justify-content: space-between;
-    padding: 10px;
+    padding: space(1) 0;
     margin-bottom: 15px;
     cursor: pointer;
 
@@ -44,7 +46,10 @@ main {
 
   &__content {
     overflow: hidden;
-    max-height: 1000px;
+    max-height: 2000px;
+    display: flex;
+    flex-direction: column;
+    gap: space(4);
     @include animate(max-height);
   }
 

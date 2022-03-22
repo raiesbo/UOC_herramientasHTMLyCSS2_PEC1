@@ -1,11 +1,14 @@
-// .section {
-//   .section__content {
-//     display: none;
-//   }
+.job-item {
+  &__info {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: space(1);
+  }
 
-//   &--collapsed {
-//     .section__content {
-//       height: auto;
-//     }
-//   }
-// }
+  &__description {
+    margin-left: space(4);
+    display: flex;
+    flex-direction: column;
+    gap: space(1);
+  }
+}

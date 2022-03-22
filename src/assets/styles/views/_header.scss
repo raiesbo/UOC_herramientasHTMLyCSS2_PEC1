@@ -1,17 +1,17 @@
 .main-header {
   width: 100%;
-  padding: 30px;
+  padding: space(6);
   background: $colorBackground-alt;
   color: $colorText-second;
 
   & > * {
     width: 100%;
-    max-width: 1170px;
+    max-width: $screenMaxWidth;
     margin: auto;
   }
 
   &__data {
-    padding-bottom: 20px;
+    padding-bottom: space(4);
 
     h1 {
       font-size: 45px;
@@ -31,11 +31,20 @@
 
     & > * {
       display: flex;
-      gap: 10px;
+      gap: space(2);
 
       i {
         transform: translateY(2px);
       }
+    }
+  }
+
+  @include matchTablet {
+    padding: space(6) space(3);
+
+    &__contact-info {
+      flex-direction: column;
+      gap: space(1);
     }
   }
 }
