@@ -1,16 +1,16 @@
-import { experience, education, technologies, hobbies } from '../data/cv-data.json';
+import { experience, education, skills, hobbies } from '../data/cv-data.json';
 
 const content = Vue.createApp({
     data() {
         return {
             experience,
             education,
-            technologies,
+            skills,
             hobbies,
             isExperienceExpanded: true,
             isEducationExpanded: true,
-            isTechnologiesExpanded: true,
-            isTechnologiesExpanded: true
+            isSkillsExpanded: true,
+            isProfileExpanded: true
         }
     },
     methods: {
@@ -20,8 +20,8 @@ const content = Vue.createApp({
         toggleEducation() {
             this.isEducationExpanded = !this.isEducationExpanded
         },
-        toggleTechnologies() {
-            this.isTechnologiesExpanded = !this.isTechnologiesExpanded
+        toggleSkills() {
+            this.isSkillsExpanded = !this.isSkillsExpanded
         },
         toggleHobbies() {
             this.isTechnologiesExpanded = !this.isTechnologiesExpanded

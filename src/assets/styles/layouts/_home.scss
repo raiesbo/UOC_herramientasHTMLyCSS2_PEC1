@@ -22,11 +22,29 @@ main {
   width: 100%;
   margin: space(6) auto;
   padding: 0 space(3);
+  max-width: calc($screenMaxWidth + 30px);
+
+  display: grid;
+  grid-template-columns: 1fr 350px;
+  gap: space(6);
+
+  @include matchTablet {
+    grid-template-columns: 1fr;
+  }
+}
+
+.main-container,
+.side-container {
+  display: flex;
+  flex-direction: column;
+  align-self: flex-start;
+  gap: space(6);
+  min-width: 100%;
 }
 
 .section {
   margin: auto;
-  max-width: $screenMaxWidth;
+  min-width: 100%;
 
   &__header {
     text-transform: uppercase;
@@ -34,7 +52,7 @@ main {
     display: flex;
     justify-content: space-between;
     padding: space(1) 0;
-    margin-bottom: 15px;
+    margin-bottom: space(3);
     cursor: pointer;
 
     @include animate();

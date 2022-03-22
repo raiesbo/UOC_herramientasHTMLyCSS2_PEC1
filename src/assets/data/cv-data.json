@@ -89,7 +89,7 @@
             ]
         }
     ],
-    "technologies": [
+    "skills": [
         {
             "label": "Languages",
             "content": "JavaScript, HTML, CSS, Python, PHP"
@@ -104,7 +104,7 @@
         },
         {
             "label": "Design",
-            "content": "Photoshop, Figma. Illustrator, InDesign"
+            "content": "Photoshop, Figma, Illustrator, InDesign"
         }
     ],
     "hobbies": [

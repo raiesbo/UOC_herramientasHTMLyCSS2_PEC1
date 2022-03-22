@@ -26,11 +26,79 @@
         <script src="https://unpkg.com/vue@3.1.1/dist/vue.global.prod.js"></script>
         <include src="./views/header.html"></include>
         <main id="content">
-            <section
+            <article class="main-container">
+                <section
+                :class="isExperienceExpanded ? 'section' : 'section section--collapsed'"
+                >
+                    <header class="section__header" @click="toggleExperience">
+                        <h2>Profile</h2>
+                        <i
+                            v-if="isExperienceExpanded"
+                            class="fa-solid fa-chevron-up fa-xl"
+                        ></i>
+                        <i v-else class="fa-solid fa-chevron-down fa-xl"></i>
+                    </header v-if="isExperienceExpanded">
+                    <ul class="section__content">
+                        <include src="./views/experience.html"></include>
+                    </ul>
+                </section>
+                <!-- <section
+                :class="isExperienceExpanded ? 'section' : 'section section--collapsed'"
+                >
+                    <header class="section__header" @click="toggleExperience">
+                        <h2>Experience</h2>
+                        <i
+                            v-if="isExperienceExpanded"
+                            class="fa-solid fa-chevron-up fa-xl"
+                        ></i>
+                        <i v-else class="fa-solid fa-chevron-down fa-xl"></i>
+                    </header v-if="isExperienceExpanded">
+                    <ul class="section__content">
+                        <include src="./views/experience.html"></include>
+                    </ul>
+                </section> -->
+                <!-- <section
+                :class="isExperienceExpanded ? 'section' : 'section section--collapsed'"
+                >
+                    <header class="section__header" @click="toggleExperience">
+                        <h2>Education</h2>
+                        <i
+                            v-if="isExperienceExpanded"
+                            class="fa-solid fa-chevron-up fa-xl"
+                        ></i>
+                        <i v-else class="fa-solid fa-chevron-down fa-xl"></i>
+                    </header v-if="isExperienceExpanded">
+                    <ul class="section__content">
+                        <include src="./views/experience.html"></include>
+                    </ul>
+                </section> -->
+            </article>
+            
+
+            <!-- HERE COMES THE REST OF THE COMPONENTS -->
+
+            <aside class="side-container">
+                <section
+                :class="isSkillsExpanded ? 'section' : 'section section--collapsed'"
+            >
+                <header class="section__header" @click="toggleSkills">
+                    <h2>Skills</h2>
+                    <i
+                        v-if="isSkillsExpanded"
+                        class="fa-solid fa-chevron-up fa-xl"
+                    ></i>
+                    <i v-else class="fa-solid fa-chevron-down fa-xl"></i>
+                </header v-if="isSkillsExpanded">
+                <ul class="section__content">
+                    <include src="./views/skills.html"></include>
+                </ul>
+            </section>
+            <!-- <include src="./views/skills.html"></include> -->
+            <!-- <section
                 :class="isExperienceExpanded ? 'section' : 'section section--collapsed'"
             >
                 <header class="section__header" @click="toggleExperience">
-                    <h2>Experience</h2>
+                    <h2>Others</h2>
                     <i
                         v-if="isExperienceExpanded"
                         class="fa-solid fa-chevron-up fa-xl"
@@ -40,9 +108,8 @@
                 <ul class="section__content">
                     <include src="./views/experience.html"></include>
                 </ul>
-            </section>
-
-            <!-- HERE COMES THE REST OF THE COMPONENTS -->
+            </section> -->
+            </aside>
         </main>
 
         <script type="module" src="./assets/scripts/main.js"></script>
