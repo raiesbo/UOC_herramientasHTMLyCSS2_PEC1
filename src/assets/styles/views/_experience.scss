@@ -1,12 +1,21 @@
 .job-item {
   &__header {
     text-transform: capitalize;
+
+    h3 {
+      display: inline;
+    }
+  }
+
+  &__company {
+    color: $colorText;
+    font-weight: 600;
   }
 
   &__info {
-    display: flex;
-    justify-content: space-between;
     margin-bottom: space(1);
+    color: $colorText;
+    font-weight: 500;
   }
 
   &__date {
@@ -18,7 +27,9 @@
     flex-direction: column;
     gap: space(1);
     color: $colorText;
-    margin-left: space(2);
+    margin-left: space(1);
+    margin-top: space(2);
+    list-style: none;
 
     i {
       margin-right: space(1);
