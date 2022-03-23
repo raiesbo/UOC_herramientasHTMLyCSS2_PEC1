@@ -1,0 +1,13 @@
+.main-footer {
+  width: 100%;
+  padding: space(6);
+  background: $colorBackground-alt;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &__content {
+    color: $colorText-white;
+    font-size: 14px;
+  }
+}
