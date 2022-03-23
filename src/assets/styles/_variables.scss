@@ -13,10 +13,9 @@ $breakpointSmall: 480px;
 $breakpointMedium: 930px;
 
 $colorText-main: #0a192f;
-$colorText-second: #bdbdbd;
+$colorText-secondary: #444452;
+$colorText-tertiary: #bdbdbd;
 $colorText-white: #fff;
-$colorText-alt: #4e9feb;
-$colorText: #444452;
 
 $colorBackground-alt: $colorText-main;
 
@@ -24,8 +23,8 @@ $colorBackground-alt: $colorText-main;
   # UTILS (MIXINS AND FUNCTIONS)
 \*------------------------------------*/
 
-//             1   2   3   4   5   6   7   8    9   10   11
-$spaceValues: (5, 10, 15, 20, 25, 30, 40, 60, 100, 160, 240);
+//             1   2   3   4   5   6   7   8    9   10
+$spaceValues: (5, 10, 15, 20, 25, 30, 40, 60, 100, 160);
 
 @function space($value) {
   @return list.nth($spaceValues, $value) * 1px;
