@@ -25,26 +25,9 @@
             }
         ]
     },
-    "profile": "I am a Berlin-based Full Stack developer driven by design and specialized in Front-End, although I also enjoy working on the server side, and I am willing to learn any technology in order to get the desired results.\nPassionate about the details, I enjoy writing well-written and efficient code that translates into attractive and functional interfaces with modern frameworks. My 5-year experience as an architect has taught me not only the design and project development principles but also team work, collective ownership, empathy and constant learning mindset.",
-    "education": [
-        {
-            "title": "Postgrad. Web Development and Design",
-            "university": "Open University of Catalonia",
-            "date": "2021 - Present",
-            "extraInfo": null
-        },
-        {
-            "title": "Architecture",
-            "university": "Warsaw University of Technology",
-            "date": "2014 - 2015",
-            "extraInfo": "Erasmus Exchange Program"
-        },
-        {
-            "title": "Architecture",
-            "university": "Technical University of Valencia",
-            "date": "2010 - 2016",
-            "extraInfo": null
-        }
+    "profile": [
+        "I am a Berlin-based Full Stack developer driven by design and specialized in Front-End, although I also enjoy working on the server side, and I am willing to learn any technology in order to get the desired results.",
+        "Passionate about the details, I enjoy writing well-written and efficient code that translates into attractive and functional interfaces with modern frameworks. My 5-year experience as an architect has taught me not only the design and project development principles but also team work, collective ownership, empathy and constant learning mindset."
     ],
     "experience": [
         {
@@ -87,6 +70,26 @@
             "tasks": [
                 "3d modelling and rendering with Rhino 3d, vray and video-renderings with Lumion."
             ]
+        }
+    ],
+    "education": [
+        {
+            "title": "Msc. Development of Websites and Web Applications",
+            "university": "Open University of Catalonia",
+            "date": "2021 - Present",
+            "extraInfo": null
+        },
+        {
+            "title": "Architecture",
+            "university": "Warsaw University of Technology",
+            "date": "2014 - 2015",
+            "extraInfo": "Erasmus Exchange Program"
+        },
+        {
+            "title": "Architecture",
+            "university": "Technical University of Valencia",
+            "date": "2010 - 2016",
+            "extraInfo": null
         }
     ],
     "skills": [

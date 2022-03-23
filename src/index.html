@@ -41,7 +41,9 @@
                         ></i>
                         <i v-else class="fa-solid fa-chevron-down fa-xl"></i>
                     </header>
-                    <p class="section__content profile">{{ profile }}</p>
+                    <p v-for="line in profile" class="section__content profile">
+                        {{ line }}
+                    </p>
                 </section>
                 <section
                     :class="isExperienceExpanded ? 'section' : 'section section--collapsed'"
@@ -58,36 +60,21 @@
                         <include src="./views/experience.html"></include>
                     </ul>
                 </section>
-                <!-- <section
-                :class="isExperienceExpanded ? 'section' : 'section section--collapsed'"
+                <section
+                    :class="isEducationExpanded ? 'section' : 'section section--collapsed'"
                 >
-                    <header class="section__header" @click="toggleExperience">
-                        <h2>Experience</h2>
-                        <i
-                            v-if="isExperienceExpanded"
-                            class="fa-solid fa-chevron-up fa-xl"
-                        ></i>
-                        <i v-else class="fa-solid fa-chevron-down fa-xl"></i>
-                    </header v-if="isExperienceExpanded">
-                    <ul class="section__content">
-                        <include src="./views/experience.html"></include>
-                    </ul>
-                </section> -->
-                <!-- <section
-                :class="isExperienceExpanded ? 'section' : 'section section--collapsed'"
-                >
-                    <header class="section__header" @click="toggleExperience">
+                    <header class="section__header" @click="toggleEducation">
                         <h2>Education</h2>
                         <i
-                            v-if="isExperienceExpanded"
+                            v-if="isEducationExpanded"
                             class="fa-solid fa-chevron-up fa-xl"
                         ></i>
                         <i v-else class="fa-solid fa-chevron-down fa-xl"></i>
-                    </header v-if="isExperienceExpanded">
+                    </header>
                     <ul class="section__content">
-                        <include src="./views/experience.html"></include>
+                        <include src="./views/education.html"></include>
                     </ul>
-                </section> -->
+                </section>
             </article>
 
             <!-- HERE COMES THE REST OF THE COMPONENTS -->

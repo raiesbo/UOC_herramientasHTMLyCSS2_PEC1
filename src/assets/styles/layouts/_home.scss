@@ -126,6 +126,10 @@ main {
 
 .profile {
   color: $colorText;
+
+  &:not(:last-of-type) {
+    margin-bottom: space(2);
+  }
 }
 
 .hobbies {
