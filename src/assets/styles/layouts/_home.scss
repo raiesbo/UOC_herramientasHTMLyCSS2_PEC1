@@ -7,7 +7,8 @@
 body {
   // display: flex;
   // flex-direction: column;
-  // height: 100vh;
+  position: relative;
+  min-height: 100vh;
   // margin: 0;
   // padding: 2rem;
   font-family: $font-family;
@@ -20,8 +21,8 @@ body {
 
 main {
   width: 100%;
-  margin: space(6) auto;
-  padding: 0 space(3);
+  margin: space(6) auto 0;
+  padding: 0 space(3) space(9);
   max-width: calc($screenMaxWidth + 30px);
 
   display: grid;
@@ -37,6 +38,7 @@ main {
 .side-container {
   display: flex;
   flex-direction: column;
+
   align-self: flex-start;
   gap: space(6);
   min-width: 100%;
@@ -126,10 +128,6 @@ main {
 
 .profile {
   color: $colorText;
-
-  &:not(:last-of-type) {
-    margin-bottom: space(2);
-  }
 }
 
 .hobbies {

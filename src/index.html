@@ -41,9 +41,11 @@
                         ></i>
                         <i v-else class="fa-solid fa-chevron-down fa-xl"></i>
                     </header>
-                    <p v-for="line in profile" class="section__content profile">
-                        {{ line }}
-                    </p>
+                    <div class="section__content">
+                        <div v-for="line in profile" class="profile">
+                            {{ line }}
+                        </div>
+                    </div>
                 </section>
                 <section
                     :class="isExperienceExpanded ? 'section' : 'section section--collapsed'"
