@@ -1,3 +1,7 @@
+/*------------------------------------*\
+  # ESTILOS GENERALES
+\*------------------------------------*/
+
 * {
   margin: 0;
   padding: 0;
@@ -5,28 +9,19 @@
 }
 
 body {
-  // display: flex;
-  // flex-direction: column;
   position: relative;
   min-height: 100vh;
-  // margin: 0;
-  // padding: 2rem;
   font-family: $font-family;
   color: $colorText-main;
-  // font-size: 16px;
-  // line-height: 24px;
-  // background-color: $uoc-bg;
-  // color: $uoc-corporate;
 }
 
 main {
-  width: 100%;
-  margin: space(6) auto 0;
-  padding: 0 space(3) space(9);
-  max-width: calc($screenMaxWidth + 30px);
-
   display: grid;
   grid-template-columns: 1fr 300px;
+  width: 100%;
+  max-width: calc($screenMaxWidth + 30px);
+  margin: space(6) auto 0;
+  padding: 0 space(3) space(10);
   gap: space(6);
 
   @include matchTablet {
@@ -34,27 +29,30 @@ main {
   }
 }
 
+/*------------------------------------*\
+  # SECCIONES
+\*------------------------------------*/
+
 .main-container,
 .side-container {
   display: flex;
   flex-direction: column;
-
   align-self: flex-start;
-  gap: space(6);
   min-width: 100%;
+  gap: space(6);
 }
 
 .section {
-  margin: auto;
   min-width: 100%;
+  margin: auto;
 
   &__header {
-    text-transform: uppercase;
-    border-bottom: 3px solid black;
     display: flex;
     justify-content: space-between;
+    text-transform: uppercase;
     padding: space(1) 0;
     margin-bottom: space(3);
+    border-bottom: 3px solid black;
     cursor: pointer;
 
     @include animate();
@@ -69,11 +67,11 @@ main {
   }
 
   &__content {
-    overflow: hidden;
-    max-height: 2000px;
     display: flex;
     flex-direction: column;
     gap: space(4);
+    overflow: hidden;
+    max-height: 2000px;
 
     @include animate(max-height);
   }
@@ -85,51 +83,11 @@ main {
   }
 }
 
-// .uoc-container {
-//   max-width: 800px;
-//   margin: auto;
-//   padding: 2rem;
-//   border-radius: 2rem;
-//   text-align: center;
-//   background-color: #fff;
-//   box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
-//     0 2px 4px -1px rgba(0, 0, 0, 0.06);
-// }
+/*------------------------------------*\
+  # CONTENIDO DE SECCIONES BÁSICAS
+\*------------------------------------*/
 
-// .uoc-logo {
-//   display: block;
-//   margin-left: auto;
-//   margin-right: auto;
-//   margin-bottom: 1.5rem;
-//   max-width: 200px;
-//   height: auto;
-
-//   @media (min-width: $mqMinWidth) {
-//     max-width: none;
-//   }
-// }
-
-// .uoc-title {
-//   font-family: $font-family-serif;
-//   font-size: 24px;
-//   font-weight: 700;
-//   color: $uoc-corporate;
-
-//   @media (min-width: $mqMinWidth) {
-//     font-size: 36px;
-//   }
-// }
-
-// .uoc-footer {
-//   margin-top: 1.5rem;
-//   font-size: 0.75rem;
-//   text-align: center;
-// }
-
-.profile {
-  color: $colorText;
-}
-
+.profile,
 .hobbies {
   color: $colorText;
 }

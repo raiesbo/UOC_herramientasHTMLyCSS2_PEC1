@@ -1,3 +1,9 @@
-.root {
-  color: green;
+.entry {
+  &__university {
+    color: $colorText;
+  }
+
+  &__date {
+    color: $colorText;
+  }
 }

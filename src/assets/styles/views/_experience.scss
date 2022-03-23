@@ -1,4 +1,4 @@
-.job-item {
+.job {
   &__header {
     text-transform: capitalize;
 
@@ -26,9 +26,9 @@
     display: flex;
     flex-direction: column;
     gap: space(1);
-    color: $colorText;
     margin-left: space(1);
     margin-top: space(2);
+    color: $colorText;
     list-style: none;
 
     i {

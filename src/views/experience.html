@@ -1,11 +1,11 @@
-<li v-for="job in experience" :key="experience.position" class="job-item">
-    <header class="job-item__header">
+<li v-for="job in experience" :key="experience.position" class="job">
+    <header class="job__header">
         <h3>{{ job.position }}</h3>
-        <span class="job-item__company"> | {{ job.company }}</span>
+        <span class="job__company"> | {{ job.company }}</span>
     </header>
-    <small class="job-item__date">{{ `${job.place} | ${job.date}` }}</small>
-    <ul class="job-item__description">
-        <li v-for="task in job.tasks" class="job-item__description--item">
+    <small class="job__date">{{ `${job.place} | ${job.date}` }}</small>
+    <ul class="job__description">
+        <li v-for="task in job.tasks" class="job__description--item">
             <i class="fa-solid fa-angle-right fa-xs"></i>
             {{ task }}
         </li>
