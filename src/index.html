@@ -31,6 +31,19 @@
         <main id="content">
             <article class="main-container">
                 <section
+                    :class="isProfileExpanded ? 'section' : 'section section--collapsed'"
+                >
+                    <header class="section__header" @click="toggleProfile">
+                        <h2>Profile</h2>
+                        <i
+                            v-if="isProfileExpanded"
+                            class="fa-solid fa-chevron-up fa-xl"
+                        ></i>
+                        <i v-else class="fa-solid fa-chevron-down fa-xl"></i>
+                    </header>
+                    <p class="section__content profile">{{ profile }}</p>
+                </section>
+                <section
                     :class="isExperienceExpanded ? 'section' : 'section section--collapsed'"
                 >
                     <header class="section__header" @click="toggleExperience">
