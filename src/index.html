@@ -16,7 +16,10 @@
             name="description"
             content="PEC1 de la asignatura de Herramientas HTML y CSS 2, UOC"
         />
-        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+        <link
+            href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+            rel="stylesheet"
+        />
     </head>
     <body>
         <link
@@ -28,7 +31,7 @@
         <main id="content">
             <article class="main-container">
                 <section
-                :class="isExperienceExpanded ? 'section' : 'section section--collapsed'"
+                    :class="isExperienceExpanded ? 'section' : 'section section--collapsed'"
                 >
                     <header class="section__header" @click="toggleExperience">
                         <h2>Experience</h2>
@@ -37,7 +40,7 @@
                             class="fa-solid fa-chevron-up fa-xl"
                         ></i>
                         <i v-else class="fa-solid fa-chevron-down fa-xl"></i>
-                    </header v-if="isExperienceExpanded">
+                    </header>
                     <ul class="section__content">
                         <include src="./views/experience.html"></include>
                     </ul>
@@ -73,42 +76,53 @@
                     </ul>
                 </section> -->
             </article>
-            
 
             <!-- HERE COMES THE REST OF THE COMPONENTS -->
 
             <aside class="side-container">
                 <section
-                :class="isSkillsExpanded ? 'section' : 'section section--collapsed'"
-            >
-                <header class="section__header" @click="toggleSkills">
-                    <h2>Skills</h2>
-                    <i
-                        v-if="isSkillsExpanded"
-                        class="fa-solid fa-chevron-up fa-xl"
-                    ></i>
-                    <i v-else class="fa-solid fa-chevron-down fa-xl"></i>
-                </header v-if="isSkillsExpanded">
-                <ul class="section__content">
-                    <include src="./views/skills.html"></include>
-                </ul>
-            </section>
-            <!-- <include src="./views/skills.html"></include> -->
-            <!-- <section
-                :class="isExperienceExpanded ? 'section' : 'section section--collapsed'"
-            >
-                <header class="section__header" @click="toggleExperience">
-                    <h2>Others</h2>
-                    <i
-                        v-if="isExperienceExpanded"
-                        class="fa-solid fa-chevron-up fa-xl"
-                    ></i>
-                    <i v-else class="fa-solid fa-chevron-down fa-xl"></i>
-                </header v-if="isExperienceExpanded">
-                <ul class="section__content">
-                    <include src="./views/experience.html"></include>
-                </ul>
-            </section> -->
+                    :class="isSkillsExpanded ? 'section' : 'section section--collapsed'"
+                >
+                    <header class="section__header" @click="toggleSkills">
+                        <h2>Skills</h2>
+                        <i
+                            v-if="isSkillsExpanded"
+                            class="fa-solid fa-chevron-up fa-xl"
+                        ></i>
+                        <i v-else class="fa-solid fa-chevron-down fa-xl"></i>
+                    </header>
+                    <ul class="section__content">
+                        <include src="./views/skills.html"></include>
+                    </ul>
+                </section>
+                <section
+                    :class="isLanguagesExpanded ? 'section' : 'section section--collapsed'"
+                >
+                    <header class="section__header" @click="toggleLanguages">
+                        <h2>Languages</h2>
+                        <i
+                            v-if="isLanguagesExpanded"
+                            class="fa-solid fa-chevron-up fa-xl"
+                        ></i>
+                        <i v-else class="fa-solid fa-chevron-down fa-xl"></i>
+                    </header>
+                    <ul class="section__content">
+                        <include src="./views/languages.html"></include>
+                    </ul>
+                </section>
+                <section
+                    :class="isHobbiesExpanded ? 'section' : 'section section--collapsed'"
+                >
+                    <header class="section__header" @click="toggleHobbies">
+                        <h2>Hobbies</h2>
+                        <i
+                            v-if="isHobbiesExpanded"
+                            class="fa-solid fa-chevron-up fa-xl"
+                        ></i>
+                        <i v-else class="fa-solid fa-chevron-down fa-xl"></i>
+                    </header>
+                    <p class="section__content hobbies">{{ hobbies }}</p>
+                </section>
             </aside>
         </main>
 

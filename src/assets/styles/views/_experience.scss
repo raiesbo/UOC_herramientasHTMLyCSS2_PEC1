@@ -35,10 +35,4 @@
       margin-right: space(1);
     }
   }
-
-  @include matchMobile {
-    &__info {
-      flex-direction: column;
-    }
-  }
 }
