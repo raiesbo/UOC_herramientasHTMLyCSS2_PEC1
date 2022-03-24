@@ -8,18 +8,18 @@
   }
 
   &__company {
-    color: $colorText-secondary;
+    color: $color-text-secondary;
     font-weight: 600;
   }
 
   &__info {
     margin-bottom: space(1);
-    color: $colorText-secondary;
+    color: $color-text-secondary;
     font-weight: 500;
   }
 
   &__date {
-    color: $colorText-secondary;
+    color: $color-text-secondary;
   }
 
   &__description {
@@ -28,7 +28,7 @@
     gap: space(1);
     margin-left: space(1);
     margin-top: space(2);
-    color: $colorText-secondary;
+    color: $color-text-secondary;
     list-style: none;
 
     i {

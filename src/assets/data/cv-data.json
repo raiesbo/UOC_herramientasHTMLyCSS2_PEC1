@@ -26,8 +26,9 @@
         ]
     },
     "profile": [
-        "I am a Berlin-based Full Stack developer driven by design and specialized in Front-End, although I also enjoy working on the server side, and I am willing to learn any technology in order to get the desired results.",
-        "Passionate about the details, I enjoy writing well-written and efficient code that translates into attractive and functional interfaces with modern frameworks. My 5-year experience as an architect has taught me not only the design and project development principles but also team work, collective ownership, empathy and constant learning mindset."
+        "I am a berlin-based software developer graduated in architecture in 2016 from the Polytechnic University of Valencia. In mid-2019 I discovered and took my first steps in the field of web development and software development.",
+        "Passionate about the details, as a software developer I enjoy writing clean and efficient code that translates into attractive and functional interfaces with modern frameworks. My 5-year experience as an architect not only has taught me the design and project development principles but also team work, the collective ownership of projects and empathy to share my experience and knowledge with my team and continue progressing.",
+        "When I am not in front of the computer, I am probably enjoying a good book, learning new things, going for a run or simply hanging out with friends."
     ],
     "experience": [
         {
@@ -36,9 +37,9 @@
             "place": "Berlin, Germany",
             "date": "08.2021 - present",
             "tasks": [
-                "Next.js aplication developement for multiple voucher white-labels and portals. ",
-                "Unit, E2E, Regression testing implementation using Cypress and Jest.",
-                "Web optimization for better performance in Lighthouse"
+                "Frontend aplications development with React/Next.",
+                "REST API development with PHP and Symfony",
+                "Quality assurance automated tests as well as conduction of code reviews."
             ]
         },
         {

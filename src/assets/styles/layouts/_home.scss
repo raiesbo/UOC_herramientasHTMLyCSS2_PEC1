@@ -12,19 +12,19 @@ body {
   position: relative;
   min-height: 100vh;
   font-family: $font-family;
-  color: $colorText-main;
+  color: $color-text-main;
 }
 
 main {
   display: grid;
   grid-template-columns: 1fr 300px;
   width: 100%;
-  max-width: calc($screenMaxWidth + 30px);
+  max-width: calc($screen-max-width + 30px);
   margin: space(6) auto 0;
   padding: 0 space(3) space(10);
   gap: space(6);
 
-  @include matchTablet {
+  @include match-tablet {
     grid-template-columns: 1fr;
   }
 }
@@ -54,8 +54,6 @@ main {
     margin-bottom: space(3);
     border-bottom: 3px solid black;
     cursor: pointer;
-
-    @include animate();
 
     &:hover {
       background-color: rgb(246, 246, 246);
@@ -89,5 +87,5 @@ main {
 
 .profile,
 .hobbies {
-  color: $colorText-secondary;
+  color: $color-text-secondary;
 }

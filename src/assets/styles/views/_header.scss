@@ -1,12 +1,12 @@
 .main-header {
   width: 100%;
   padding: space(6);
-  color: $colorText-tertiary;
-  background: $colorBackground-alt;
+  color: $color-text-tertiary;
+  background: $color-background-alt;
 
   & > * {
     width: 100%;
-    max-width: $screenMaxWidth;
+    max-width: $screen-max-width;
     margin: auto;
   }
 
@@ -16,7 +16,7 @@
     h1 {
       font-size: 45px;
       text-transform: uppercase;
-      color: $colorText-white;
+      color: $color-text-white;
     }
 
     p {
@@ -39,7 +39,7 @@
     }
   }
 
-  @include matchTablet {
+  @include match-tablet {
     padding: space(6) space(3);
 
     &__contact-info {
