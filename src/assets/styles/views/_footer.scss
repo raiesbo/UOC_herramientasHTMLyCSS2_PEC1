@@ -2,15 +2,16 @@
   position: absolute;
   bottom: 0;
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
+
   width: 100%;
   padding: space(6);
   background: $color-background-alt;
 
   &__content {
-    text-align: center;
-    color: $color-text-white;
     font-size: 14px;
+    color: $color-text-white;
+    text-align: center;
   }
 }

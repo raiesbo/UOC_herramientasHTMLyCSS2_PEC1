@@ -1,7 +1,7 @@
 .language {
   display: flex;
-  align-items: flex-end;
   gap: space(2);
+  align-items: flex-end;
 
   &__level {
     color: $color-text-secondary;

@@ -3,9 +3,9 @@
 \*------------------------------------*/
 
 * {
-  margin: 0;
-  padding: 0;
   box-sizing: border-box;
+  padding: 0;
+  margin: 0;
 }
 
 body {
@@ -18,11 +18,11 @@ body {
 main {
   display: grid;
   grid-template-columns: 1fr 300px;
+  gap: space(6);
   width: 100%;
   max-width: calc($screen-max-width + 30px);
-  margin: space(6) auto 0;
   padding: 0 space(3) space(10);
-  gap: space(6);
+  margin: space(6) auto 0;
 
   @include match-tablet {
     grid-template-columns: 1fr;
@@ -37,9 +37,9 @@ main {
 .side-container {
   display: flex;
   flex-direction: column;
+  gap: space(6);
   align-self: flex-start;
   min-width: 100%;
-  gap: space(6);
 }
 
 .section {
@@ -49,11 +49,11 @@ main {
   &__header {
     display: flex;
     justify-content: space-between;
-    text-transform: uppercase;
     padding: space(1) 0;
     margin-bottom: space(3);
-    border-bottom: 3px solid black;
+    text-transform: uppercase;
     cursor: pointer;
+    border-bottom: 3px solid black;
 
     &:hover {
       background-color: rgb(246, 246, 246);
@@ -68,8 +68,8 @@ main {
     display: flex;
     flex-direction: column;
     gap: space(4);
-    overflow: hidden;
     max-height: 2000px;
+    overflow: hidden;
 
     @include animate(max-height);
   }
